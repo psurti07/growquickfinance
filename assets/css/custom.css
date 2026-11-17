@@ -1410,16 +1410,19 @@ padding: 15px;
 }
 
 .testimonials-card-content {
-  border-radius: 22px;
+  border-radius: 0;
   margin-top: 15px;
+ border-top:3px solid #24B7BD;
 }
 
 .featured_Jobs_Block .client_testimonials .testimonials-card-content .card-comment p {
   line-height: 24px;
+      font-weight: 600;
+    color: #0B0F12;
 }
 
 .box-agent .agent-img-list .agent-img-item:not(:first-child) {
-  margin-left: -9px;
+  margin-left: -15px;
 }
 
 .box-agent .agent-img-list .agent-img-item {
@@ -1452,10 +1455,197 @@ padding: 15px;
 }
 
 @media screen and (max-width:767px) {
-   .bg-dark{
-background: linear-gradient(180deg, #1C0338 0%, #4D0690 100%);
-   }  
+ 
    .partner-bg-img{
     margin-top: 0;
    } 
 }
+
+.highlight-text {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 62%,
+        rgba(36, 183, 189, 0.45) 62%
+    );
+    display: inline;
+}
+.counter-section{
+      border: 1.5px solid #D8E3E4;
+    border-radius: 28px;
+}
+
+
+.counter-section .col-lg-6:nth-child(odd) .counter-box {
+    border-right: 1px solid #D8E3E4;
+}
+
+ 
+.counter-section .col-lg-6:nth-child(1) .counter-box,
+.counter-section .col-lg-6:nth-child(2) .counter-box {
+    border-bottom: 1px solid #D8E3E4;
+}
+.section-title {
+    position: relative;
+    padding-left: 48px;
+}
+
+.section-title:before{
+ content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #24B7BD;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.categories-image-wrap {
+    padding: 16px;
+    display: flex;
+    border-radius: 100px;
+    background: #0B0F12;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+}
+
+.categories-image-block {
+    padding: 16px;
+    display: flex;
+    border-radius: 18px;
+    background: #24B7BD;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+}
+
+.process-boxes{
+  border-top: 3px solid #0B0F12;
+}
+
+.process-boxes > div {
+    border-right: 1px solid #D5E2E5;
+    padding: 0 20px;
+}
+
+ 
+.process-boxes > div:last-child {
+    border-right: none;
+}
+.bg-black{
+  background-color: #0B0F12 !important;
+}
+
+.process-boxes-main{
+border:1px solid #FFFFFF29;
+}
+ 
+.process-boxes-main {
+    border: 1px solid #2B3032;
+    padding: 0 !important;
+}
+
+.process-boxes-main > div {
+    padding: 25px !important;
+    border-right: 1px solid #2B3032;
+    border-bottom: 1px solid #2B3032;
+}
+
+@media screen and (min-width:768px) {
+  .process-boxes-main > div:nth-child(3n) {
+    border-right: none;
+}
+
+ 
+.process-boxes-main > div:nth-child(n+4) {
+    border-bottom: none;
+}
+}
+ 
+
+#faq-accordion-2 .accordion-item:has(.accordion-button:not(.collapsed)) {
+    background: #E8F7F7;
+    border-bottom: 1px solid #24B7BD;
+}
+#faq-accordion-2 .accordion-item {
+    border-bottom: 1px solid #DCE5E7;
+}
+.cta-section{
+   display: inline-block;
+    background-color: #ffffff;
+    color: #101619;
+    padding: 2px 10px 5px;
+    border-radius: 10px; 
+    white-space: nowrap;
+}
+.title-text-wrap{
+      display: inline-block;
+    background: #ffffff;
+    color: #101619;
+    padding: 0px 10px 3px;
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    transform: rotate(-3deg);
+    margin-left: 5px;
+}
+ 
+@media screen and (max-width:767px) {
+  .how-work-block-wrap .process-boxes > div{
+   border-right: none;
+   border-bottom: 1px solid #D5E2E5;
+
+}
+
+ .how-work-block-wrap .process-boxes > div { 
+        padding: 20px 0; 
+        border-bottom: 1px solid #D5E2E5;
+    }
+
+     
+    .how-work-block-wrap .process-boxes > div > .process-content {
+        display: grid;
+        grid-template-columns: 55px minmax(0, 1fr);
+        column-gap: 15px;
+        align-items: start;
+    }
+
+ 
+    .how-work-block-wrap .process-boxes .process-content > span {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 5px !important;
+   
+    }
+
+ 
+    .how-work-block-wrap .categories-image-wrap {
+        grid-row: 1 / 4;
+     
+    }
+ 
+    .how-work-block-wrap .process-boxes h6 {
+        grid-column: 2;
+        grid-row: 2;
+     
+    }
+
+ 
+    .how-work-block-wrap .process-boxes p {
+        grid-column: 2;
+        grid-row: 3;
+      
+    }
+
+ 
+    .how-work-block-wrap .process-boxes > div:last-child {
+        border-bottom: none;
+    }
+
+}
+
+
+ 

@@ -603,33 +603,9 @@ i {
 
 
 
-@font-face {
-  font-family: 'Plus Jakarta Sans' !important;
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/plusjakartasans/v11/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yyg.woff2') format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* latin */
-@font-face {
-  font-family: 'Plus Jakarta Sans' !important;
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/plusjakartasans/v11/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yyf.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
-    U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-body {
-  /* min-width: 360px; */
-  /* font-family: 'Plus Jakarta Sans' !important; */
-}
+ 
 
 @media (max-width: 1199.98px) {
   body {
@@ -967,7 +943,7 @@ a {
 }
 
 .btn.btn-green:hover {
-  box-shadow: 0px 8px 20px -8px #00B04A;
+    box-shadow: 0px 8px 20px -5px rgba(11, 15, 18, 0.45);
 }
 
 .btn.btn-brown:hover:before,
@@ -993,26 +969,28 @@ a {
 .btn.btn-white:before {
   opacity: 0.5;
 }
-
+/* 
 .btn.btn-dark-yellow:hover:before,
 .btn.btn-white:hover:before {
   background: #bf8300;
-}
+} */
 
 .btn.btn-dark-yellow.btn-sm,
 .btn.btn-white.btn-sm {
   font-size: 16px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  /* padding-top: 17px;
+  padding-bottom: 17px; */
 }
 
-.btn.btn-white {
-  color: #000;
-  background: #fff;
+.btn.btn-white { 
+    color: #0B0F12;
+    background: transparent;
+    border: 1px solid #0B0F12;
 }
 
-.btn.btn-white:hover:before {
-  background: #bfbfbf;
+.btn.btn-white:hover {
+  background:  #0B0F12;
+  color:#fff;
 }
 
 .btn .btn-text {
@@ -7071,7 +7049,6 @@ textarea.form-control.form-control-lg {
 .counters-block .counter-box {
   width: 100%;
   text-align: start;
-  margin: 0 0 30px;
 }
 
 @media (min-width: 992px) {
@@ -9148,7 +9125,7 @@ textarea.form-control.form-control-lg {
 .contact-list {
   list-style: none;
   padding: 2px 0 0;
-  margin: 0 0 10px;
+  margin: 0;
   line-height: 1.5;
   overflow: hidden;
 }
@@ -9194,7 +9171,7 @@ textarea.form-control.form-control-lg {
 }
 
 .contact-list li a {
-  color: #656966;
+  color: #9FB2B8;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -9319,17 +9296,13 @@ textarea.form-control.form-control-lg {
 }
 
 .footer-links li a {
-  color: #656966;
+  color: #9FB2B8;
   font-size: 14px;
   line-height: 20px;
 }
 
 .footer-links li a:hover {
   color: #3a3b97;
-}
-
-.pri-footer-top {
-  border-bottom: 3px solid #acacac;
 }
 
 .form-subscribe {
@@ -9398,11 +9371,11 @@ textarea.form-control.form-control-lg {
 
 .sec-footer p {
   margin: 0;
-  color: #656966
+  color: #9FB2B8;
 }
 
 .header-theme-1 {
-  background: #1C0338;
+  background: #fff;
 }
 
 .header-theme-1+.subvisual-block,
@@ -9468,12 +9441,12 @@ textarea.form-control.form-control-lg {
   }
 
   .header-menu .navigation>li>a:not(.btn) {
-    color: #fff !important;
+    color: #566A72 !important;
   }
 }
 
 .header-theme-1 .navigation>li>a:not(.btn):hover {
-  color: #20ca6f !important;
+  color: #0B0F12 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -10003,7 +9976,7 @@ textarea.form-control.form-control-lg {
 
 @media (max-width: 991.98px) {
   .section-theme-1.section-contact .contac-form textarea.form-control {
-    border-radius: 25px;
+    border-radius: 14px;
   }
 }
 
@@ -12173,8 +12146,6 @@ textarea.form-control.form-control-lg {
   padding: 0;
   margin: 0;
   border-radius: 25px 0 0 25px;
-  background: linear-gradient(180deg, #4D0690 0%, #5C3086 51.52%, #7F56A7 100%);
-  ;
   padding: 45px;
   border: 1px solid #E1E5EA;
 }
@@ -12225,7 +12196,7 @@ textarea.form-control.form-control-lg {
 }
 
 .contact-support .contact-box h3 {
-  font-size: 12px;
+  font-size: 16px;
   color: #575E69;
   margin: 0 0 5px;
   line-height: 16px;
@@ -12238,11 +12209,11 @@ textarea.form-control.form-control-lg {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
-  color: #0C121A;
+  color: #9FB2B8;
 }
 
 .contact-support .contact-box a {
-  color: #0C121A;
+  color: #9FB2B8;
   text-decoration: underline;
 }
 
@@ -12579,7 +12550,7 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 992px) {
   .section-faqs .accordion .accordion-header {
-    margin: 0 0 10px;
+    margin: 0;
   }
 }
 
@@ -12588,7 +12559,7 @@ textarea.form-control.form-control-lg {
   align-items: center;
   width: 100%;
   background: #eff6f3;
-  border-radius: 18px;
+  border-radius: 0px;
   font-size: 14px;
   line-height: 26px;
   color: #000;
@@ -12627,7 +12598,7 @@ textarea.form-control.form-control-lg {
   justify-content: center;
   border-radius: 100%;
   position: relative;
-  background: #20ca6f;
+  background: #0B0F12;
   margin: 0 10px 0 0;
   transition: 0.3s;
 }
@@ -12711,7 +12682,7 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 1200px) {
   .section-faqs .accordion .accordion-body {
-    padding: 15px 40px 15px 60px;
+    padding: 15px 40px 15px 15px;
   }
 }
 
@@ -14951,11 +14922,11 @@ textarea.form-control.form-control-lg {
 .footer-theme-1 {
   position: relative;
   overflow: visible;
-  background: #F4EFF8;
+  background: #0B0F12;
 }
 
-.footer-theme-1 h5 {
-  color: #0C121A;
+.footer-theme-1 h6 {
+  color: #fff;
   position: relative;
   padding-top: 0;
   padding-bottom: 7px;
@@ -14986,7 +14957,7 @@ textarea.form-control.form-control-lg {
 
 .footer-theme-1 .pri-footer .footer-info p {
   margin: 0 0 15px;
-  color: #656966;
+  color: #9FB2B8;
   font-size: 14px;
   line-height: 20px;
 }
@@ -14998,7 +14969,7 @@ textarea.form-control.form-control-lg {
 .footer-theme-1 .contact-list {
   font-size: 16px;
   font-weight: 400;
-  color: #656966;
+  color: #9FB2B8;
 }
 
 .footer-theme-1 .contact-list li i {
@@ -15045,7 +15016,7 @@ textarea.form-control.form-control-lg {
 
 .footer-theme-1 .footer-links li a:hover,
 .footer-theme-1 .social-networks li a:hover {
-  color: #20ca6f;
+  color:#17878C ;
 }
 
 .header-theme-2 .nav-close span,
@@ -15499,9 +15470,10 @@ textarea.form-control.form-control-lg {
 .section-theme-2 h4,
 .section-theme-2 h5,
 .section-theme-2 h6 {
-  font-family: "Epilogue", system-ui, -apple-system, "Segoe UI", Roboto,
+  /* font-family: "Epilogue", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+        font-family: 'Outfit', sans-serif !important;
 }
 
 .section-theme-2 .section-header {
@@ -15651,7 +15623,7 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 1375px) {
   .section-theme-2 .counters-block .numbers {
-    font-size: 70px;
+    font-size: 63px;
   }
 }
 
@@ -50017,9 +49989,9 @@ textarea.form-control.form-control-lg {
 }
 
 .how-we-help-block p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  color: #575E69;
+    color: #9FB2B8;
 }
 
 .section-theme-12.how-we-help-block .two-columns .column .icon {
@@ -50035,12 +50007,7 @@ textarea.form-control.form-control-lg {
 .contact-section .contact-support p {
   font-size: 14px;
   line-height: 20px;
-  color: #575E69;
-}
-
-.contact-section .contact-form {
-  max-width: 1045px;
-  margin: auto;
+  color: #9FB2B8;
 }
 
 .contact-support .contact-box .icon {
@@ -50279,8 +50246,7 @@ textarea.form-control.form-control-lg {
 }
 
 .bg-dark {
-  /* background: linear-gradient(180deg, #1C0338 0%, #4D0690 53%, #285E1E 100%); */
-  background: radial-gradient(ellipse at 85% 45%, rgba(77, 6, 144, 0.95) 0%, transparent 45%), linear-gradient(180deg, #1C0338 0%, #35005F 45%, #4D0690 70%, #37404B 100%);
+     background-color: #24B7BD !important;
 }
 
 .rates-review {
@@ -50293,6 +50259,9 @@ textarea.form-control.form-control-lg {
 
 .contact-form-right {
   border-radius: 0 20px 20px 0;
+  border-right: 1.5px solid #0B0F12;
+  border-bottom: 1.5px solid #0B0F12;
+  border-top: 1.5px solid #0B0F12;
 }
 
 .top_companies_block {
@@ -50304,7 +50273,7 @@ textarea.form-control.form-control-lg {
 }
 
 .text-success {
-  color: #43A214 !important;
+  color: #17878C !important;
 }
 
 .bg-light-purple {
