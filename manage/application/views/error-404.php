@@ -31,7 +31,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="col-md-4 col-10 p-0">
               <div class="card-header bg-transparent border-0 text-center">
-                <img src="<?php echo base_url('assets/images/logo/logo-dark.png'); ?>" alt="<?php echo PROJECT_NAME; ?>">
+                <img src="<?php echo base_url('assets/images/logo/'); ?>" alt="<?php echo PROJECT_NAME; ?>">
               </div>
               <div class="card-content text-center">
                 <h2 class="error-code text-white mb-2">404</h2>

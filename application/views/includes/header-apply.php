@@ -83,7 +83,7 @@
                 <div class="text-start">
                 <strong class="logo">
                     <a href="<?php echo site_url(); ?>">
-                        <img class="normal-logo" src="<?php echo base_url('assets/images/logo/logo-light.png'); ?>"
+                        <img class="normal-logo" src="<?php echo base_url('assets/images/logo/logo.png'); ?>"
                             alt="flexicread">
                         <img class="sticky-logo" src="<?php echo base_url('assets/images/logo/logo-img.png'); ?>"
                             alt="flexicread">

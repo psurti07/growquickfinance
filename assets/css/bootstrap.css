@@ -5010,8 +5010,6 @@ textarea.form-control-lg {
     .valid-feedback
   ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 .input-group > .form-floating:not(:first-child) > .form-control,
 .input-group > .form-floating:not(:first-child) > .form-select {
@@ -5283,8 +5281,8 @@ textarea.form-control.is-invalid {
 .btn:first-child:active,
 :not(.btn-check) + .btn:active {
   color: var(--bs-btn-active-color);
-  background-color: var(--bs-btn-active-bg);
-  border-color: var(--bs-btn-active-border-color);
+  /* background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color); */
 }
 .btn-check:checked + .btn:focus-visible,
 .btn.active:focus-visible,

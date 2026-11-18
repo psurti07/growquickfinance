@@ -7,7 +7,7 @@ $this->load->view('includes/header');
     <div class="container position-relative">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 col-xl-6 position-relative mb-md-0 mb-20">
-                <div class="me-25">
+                <div class="me-md-25 me-0">
                     <div class="visual-textbox pt-0">
                         <h1 class="text-black fs-1" style="line-height: 1.5;">Grow quick. <span class="title-text-wrap">
                                 Borrow smart.
@@ -17,7 +17,7 @@ $this->load->view('includes/header');
                             partners in one place. 100% online, transparent and fast.</p>
                         <div class="right_align">
                             <a href="<?php echo site_url('onlineprocess/applynow'); ?>"
-                                class="btn btn-green btn-sm"><span class="btn-text">Check eligibility <i
+                                class="btn btn-green btn-sm me-md-10"><span class="btn-text">Check eligibility <i
                                         class="fas fa-arrow-right"></i></span></a>
                             <a href="#" class="btn btn-white btn-sm">See how it works</a>
                         </div>
@@ -59,7 +59,9 @@ $this->load->view('includes/header');
                 </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-6">
-                <img src="<?php echo base_url('assets/images/img/home-img-1.png'); ?>" alt="image" class="img-fluid">
+                <img src="<?php echo base_url('assets/images/img/home-img-1.png'); ?>" alt="image" class="img-fluid dekstop-img d-md-block d-none">
+
+                <img src="<?php echo base_url('assets/images/img/home-mobile-img.png'); ?>" alt="image" class="img-fluid dekstop-img d-md-none d-block m-auto">
             </div>
         </div>
     </div>
@@ -85,7 +87,7 @@ $this->load->view('includes/header');
         id="aboutus">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 mt-10 mb-15 mb-md-30 mb-lg-0 pe-60">
+                <div class="col-12 col-lg-7 mt-10 mb-15 mb-md-30 mb-lg-0 pe-md-60 pe-0">
                     <header class="section-header mb-0">
                         <span class="text-success text-uppercase text-outlined text-top mb-15 d-block section-title position-relative">About us</span>
                         <h3 class="mb-25 text-black h3 fw-normal">We connect borrowers with trusted NBFC partners so getting a loan <br>
@@ -161,16 +163,16 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-    <section class="section section-theme-5 how-work-block-wrap pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60 bg-light-sky">
+    <section class="section section-theme-5 how-work-block-wrap pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60 bg-light-sky" id="how-it-works">
         <div class="container">
-            <div class="row mb-30">
+            <div class="row mb-30 align-items-end">
                 <div class="col-xl-7 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">How it works</span>
-                        <h3 class="text-black mb-0">Six steps from <span class="highlight-text">click to cash</span></h3>
+                        <h4 class="text-black mb-0">Six steps from <span class="highlight-text">click to cash</span></h4>
                     </header>
                 </div>
-                <div class="col-xl-5 col-12 m-auto">
+                <div class="col-xl-5 col-12 m-auto mb-0">
                     <p>A fully digital process with no branch visits and no paperwork queues.</p>
                 </div>
             </div>
@@ -252,16 +254,16 @@ $this->load->view('includes/header');
     </section>
 
 
-    <section class="section section-theme-5 how-we-help-block pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60 bg-black">
+    <section class="section section-theme-5 how-we-help-block pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60 bg-black" id="whyus">
         <div class="container">
-            <div class="row mb-30">
+            <div class="row mb-30 align-items-end">
                 <div class="col-xl-7 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">Why choose us</span>
-                        <h3 class="text-white mb-0">The Growquick <span class="highlight-text">advantage</span></h3>
+                        <h4 class="text-white mb-0">The Growquick <span class="highlight-text">advantage</span></h4>
                     </header>
                 </div>
-                <div class="col-xl-5 col-12 m-auto">
+                <div class="col-xl-5 col-12 m-auto mb-0">
                     <p class="text-white">Built around speed, clarity and choice for every borrower.</p>
                 </div>
             </div>
@@ -337,16 +339,16 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-    <section class="section section-theme-5 how-work-block pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60">
+    <section class="section section-theme-5 how-work-block pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60" id="emicalcuator">
         <div class="container">
-            <div class="row mb-30">
+            <div class="row mb-30 align-items-end">
                 <div class="col-xl-7 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">EMI calculator</span>
-                        <h3 class="text-black mb-0">Know your EMI <span class="highlight-text">in seconds</span></h3>
+                        <h4 class="text-black mb-0">Know your EMI <span class="highlight-text">in seconds</span></h4>
                     </header>
                 </div>
-                <div class="col-xl-5 col-12 m-auto">
+                <div class="col-xl-5 col-12 m-auto mb-0">
                     <p class="text-black">Move the sliders and pick a tenure to see what you can borrow.</p>
                 </div>
             </div>
@@ -371,14 +373,14 @@ $this->load->view('includes/header');
     <section class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60 bg-light-sky"
         id="testimonial">
         <div class="container">
-            <div class="row mb-30">
+            <div class="row mb-30 align-items-end">
                 <div class="col-xl-7 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">Testimonials</span>
-                        <h3 class="text-black mb-0">Borrowers who <span class="highlight-text">grew quick</span></h3>
+                        <h4 class="text-black mb-0">Borrowers who <span class="highlight-text">grew quick</span></h4>
                     </header>
                 </div>
-                <div class="col-xl-5 col-12 m-auto">
+                <div class="col-xl-5 col-12 m-auto mb-0">
                     <p class="text-black">Real stories from people who found their loan with us.</p>
                 </div>
             </div>
@@ -656,13 +658,13 @@ $this->load->view('includes/header');
         </div>
     </section>
     <section
-        class="section section-theme-1 section-faqs pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60">
+        class="section section-theme-1 section-faqs pt-60 pt-md-60 py-xl-80 pb-60 pb-md-60" id="faq">
         <div class="container">
-            <div class="row mb-30">
+            <div class="row mb-0">
                 <div class="col-xl-4 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">FAQ</span>
-                        <h3 class="text-black mb-10">Questions, <br><span class="highlight-text">answered</span></h3>
+                        <h4 class="text-black mb-10">Questions, <br><span class="highlight-text">answered</span></h4>
                         <p class="text-black">Can't find what you need? Send us a message and we'll reply quickly.</p>
                     </header>
                 </div>
@@ -776,15 +778,14 @@ $this->load->view('includes/header');
         class="section section-contact section-theme-1 pt-60 pt-md-60 py-xl-80 py-xxl-80 pb-60 pb-md-60 contact-section bg-light-sky"
         id="contactus">
         <div class="container">
-
-            <div class="row mb-30">
+            <div class="row mb-30 align-items-end">
                 <div class="col-xl-7 col-12">
                     <header class="section-header mb-10">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block section-title position-relative">Contact</span>
-                        <h3 class="text-black mb-0">Drop us a <span class="highlight-text">message</span></h3>
+                        <h4 class="text-black mb-0">Drop us a <span class="highlight-text">message</span></h4>
                     </header>
                 </div>
-                <div class="col-xl-5 col-12 m-auto">
+                <div class="col-xl-5 col-12 m-auto mb-0">
                     <p class="text-black">Talk to a certified loan expert for a free consultation.</p>
                 </div>
             </div>
@@ -907,21 +908,20 @@ $this->load->view('includes/header');
                             </div>
                             <?php echo form_close(); ?>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="pri-footer-top pt-40 pt-md-40 py-xl-50 pb-60 pb-md-60 bg-dark">
+        <div class="pri-footer-top pt-40 pt-md-40 py-xl-50 pb-40 pb-md-60 bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-5 mb-20 mb-lg-0">
-                        <h3 class="text-black">Ready to <span class="cta-section">grow quick?</span></h3>
+                    <div class="col-12 col-lg-6 mb-15 mb-lg-0">
+                        <h4 class="text-black mb-0 text-md-start text-center">Ready to <span class="cta-section">grow quick?</span></h4>
                     </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="footer-buttons text-md-end">
+                    <div class="col-12 col-lg-6">
+                        <div class="footer-buttons text-md-end text-center">
                             <a href="#" class="btn btn-green btn-sm"><span class="btn-text">Get started <i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>

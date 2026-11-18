@@ -52,7 +52,7 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
           <li class="nav-item">
             <a class="navbar-brand" href="javascript:;">
 							<img class="brand-logo" src="<?php echo base_url('assets/images/logo/favicon-light.png'); ?>" alt="<?php echo PROJECT_NAME; ?>">
-              <h3 class="brand-text"><img class="brand-text" alt="<?php echo PROJECT_NAME; ?>" src="<?php echo base_url('assets/images/logo/logo-light-name.png'); ?>" height="36" width="100"></h3>
+              <h3 class="brand-text"><img class="brand-text" alt="<?php echo PROJECT_NAME; ?>" src="<?php echo base_url('assets/images/logo/.png'); ?>" height="36" width="100"></h3>
             </a>
           </li>
           <li class="nav-item d-md-none">

@@ -43,11 +43,11 @@
   color: #28D094;
   border-color: #28D094; }
 
-.form-group.validate input:focus, .form-group.validate select:focus, .form-group.validate textarea:focus {
+/* .form-group.validate input:focus, .form-group.validate select:focus, .form-group.validate textarea:focus {
   border-color: #34C5A1;
   -webkit-box-shadow: 0 0 6px #78DCC3;
   -moz-box-shadow: 0 0 6px #78DCC3;
-  box-shadow: 0 0 6px #78DCC3; }
+  box-shadow: 0 0 6px #78DCC3; } */
 
 .form-group.validate .input-prepend .add-on, .form-group.validate .input-append .add-on {
   color: #28D094;

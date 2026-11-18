@@ -12,7 +12,7 @@
 .range__value span {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #005e2a;
+  color: #0B0F12;
 }
 
 .range__emi {
@@ -47,14 +47,14 @@
   height: 20px !important;
   border-radius: 50%;
   background: #f0f8ff;
-  border: #22C55E 3px solid;
+  border: #0B0F12 3px solid;
   cursor: pointer;
   -webkit-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
 }
 
 .range__slider [type="range"]::-webkit-slider-thumb:hover {
-  background: #8bcb98;
+  background: #0B0F12;
 }
 
 .range__slider [type="range"]::-moz-range-thumb {
@@ -62,8 +62,8 @@
   height: 20px !important;
   border: 0;
   border-radius: 50%;
-  background: #005e2a;
-  border: #22C55E 5px solid;
+  background: transparent;
+  border: #0B0F12 5px solid;
   cursor: pointer;
   -webkit-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
@@ -71,7 +71,7 @@
 
 .custom-control-input {
   -webkit-appearance: checkbox !important;
-  accent-color: #22C55E;
+  accent-color: #0B0F12;
 }
 
 .contac-form .input-field input {
@@ -608,8 +608,8 @@ display: none; */
 :root {
   --card-line-height: 1.2em;
   --card-padding: 1em;
-  --card-radius: 0.5em;
-  --color-green: #43A214;
+  --card-radius: 24px;
+  --color-green: #0B0F12;
   --color-gray: #e2ebf6;
   --color-dark-gray: #c4d1e1;
   --radio-border-width: 1px;
@@ -647,6 +647,8 @@ display: none; */
   position: absolute;
   right: calc(var(--card-padding) + var(--radio-border-width));
   top: calc(var(--card-padding) + var(--radio-border-width));
+  top: 0;
+  right: 0;
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
@@ -680,6 +682,8 @@ display: none; */
   .radio:checked {
     background: var(--color-green);
     border-color: var(--color-green);
+    top: 0;
+    right: 0;
   }
 
   .card:hover .radio {
@@ -707,6 +711,7 @@ display: none; */
 
 .radio:checked~.plan-details {
   border-color: var(--color-green);
+  background-color: #E8F7F7;
 }
 
 /* .radio:focus ~ .plan-details {
@@ -1459,6 +1464,10 @@ padding: 15px;
    .partner-bg-img{
     margin-top: 0;
    } 
+   .contact-form-right{
+        border-top: none !important;
+    border: 1.5px solid #0b0f12;
+   }
 }
 
 .highlight-text {
@@ -1554,6 +1563,7 @@ border:1px solid #FFFFFF29;
     border-bottom: 1px solid #2B3032;
 }
 
+
 @media screen and (min-width:768px) {
   .process-boxes-main > div:nth-child(3n) {
     border-right: none;
@@ -1565,7 +1575,6 @@ border:1px solid #FFFFFF29;
 }
 }
  
-
 #faq-accordion-2 .accordion-item:has(.accordion-button:not(.collapsed)) {
     background: #E8F7F7;
     border-bottom: 1px solid #24B7BD;
@@ -1586,7 +1595,7 @@ border:1px solid #FFFFFF29;
     background: #ffffff;
     color: #101619;
     padding: 0px 10px 3px;
-    border-radius: 24px;
+    border-radius: 10px;
     font-weight: 700;
     line-height: 1.2;
     transform: rotate(-3deg);
@@ -1599,13 +1608,12 @@ border:1px solid #FFFFFF29;
    border-bottom: 1px solid #D5E2E5;
 
 }
-
- .how-work-block-wrap .process-boxes > div { 
+  .how-work-block-wrap .process-boxes > div { 
         padding: 20px 0; 
         border-bottom: 1px solid #D5E2E5;
     }
 
-     
+
     .how-work-block-wrap .process-boxes > div > .process-content {
         display: grid;
         grid-template-columns: 55px minmax(0, 1fr);
@@ -1613,7 +1621,6 @@ border:1px solid #FFFFFF29;
         align-items: start;
     }
 
- 
     .how-work-block-wrap .process-boxes .process-content > span {
         grid-column: 2;
         grid-row: 1;
@@ -1621,31 +1628,141 @@ border:1px solid #FFFFFF29;
    
     }
 
- 
     .how-work-block-wrap .categories-image-wrap {
         grid-row: 1 / 4;
      
     }
- 
+
     .how-work-block-wrap .process-boxes h6 {
         grid-column: 2;
         grid-row: 2;
      
     }
 
- 
     .how-work-block-wrap .process-boxes p {
         grid-column: 2;
         grid-row: 3;
       
     }
 
- 
     .how-work-block-wrap .process-boxes > div:last-child {
         border-bottom: none;
     }
 
 }
-
-
  
+ .hero-section .features-image{
+    background-color: #0B0F12;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    text-align: center;
+}
+.top_companies_block .detail_box.candidate:hover{
+  background-color: #000;
+  border: 1.5px solid #0B0F12;
+
+}
+.top_companies_block .detail_box.candidate:hover h5,.top_companies_block .detail_box.candidate:hover span{
+  color: #fff !important;
+}
+
+.top_companies_block .detail_box.candidate .details-content{
+  border-bottom:1.5px solid #D8E3E4;
+    border-top:1.5px solid #D8E3E4;
+}
+.top_companies_block .detail_box.candidate:hover .details-content{
+  border-top: 1.5px solid #FFFFFF2E !important;
+    border-bottom:1.5px solid #FFFFFF2E !important;
+}
+ .bg-gray{
+      background: #D8E3E4;
+ }
+
+.checkeligible-section .plan-details{
+border-radius: 10px !important;
+}
+.card-blog-wrap{
+  background-color: #FDECEB !important;
+  border-radius: 12px;
+}
+
+
+/* =====================================
+   DESKTOP PROGRESS
+===================================== */
+
+.loan-step-desktop {
+    width: 100%;
+    padding: 20px 0;
+ 
+}
+
+.loan-step-desktop .loan-steps {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+}
+
+.loan-step-desktop .loan-step {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.loan-step-desktop .loan-step .step-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: #dce3e8;
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+}
+
+.loan-step-desktop .loan-step.completed .step-bar {
+    background: #0B0F12
+}
+
+
+.loan-step-desktop .loan-step.active .step-bar {
+    background: #24B7BD
+}
+
+.loan-step-desktop .loan-step .step-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.loan-step-desktop .loan-step .step-label h6 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #8A9BA2;
+    margin: 0;
+}
+
+.loan-step-desktop .loan-step.completed .step-label h6,
+.loan-step-desktop .loan-step.active .step-label h6  {
+    color:#0B0F12;
+}
+
+
+.loan-step-mobile {
+    display: none;
+}
+
+
+@media screen and  (max-width: 767px) {
+
+.loan-step-desktop .loan-step .step-label h6{
+  position: absolute;
+  left: 15px;
+}
+
+}
+
+.process-boxes .process-content p{
+  line-height: 24px;
+}

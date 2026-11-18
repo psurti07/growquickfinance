@@ -77,7 +77,7 @@
 
         <main class="main">
       <section
-        class="section section-accounts section-theme-1 pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-120 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-120 vh-100 d-flex align-items-center justify-content-center">
+        class="section section-accounts section-theme-1 bg-light-sky pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-120 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-120 vh-100 d-flex align-items-center justify-content-center">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 m-auto">
@@ -99,7 +99,7 @@
                                 data-validation-regex-message="Enter valid mobile number">
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-green btn-sm w-100"><span class="btn-text">SEND</span></button>
+                            <button class="btn btn-green btn-sm w-100"><span class="btn-text">Send</span></button>
                         </div>
                     </div>
                     <?php echo form_close(); ?>

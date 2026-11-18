@@ -88,7 +88,7 @@
 			<div class="container">
 				<strong class="logo">
 					<a href="<?php echo site_url(); ?>">
-						<img class="normal-logo" src="<?php echo base_url('assets/images/logo/logo-lg.png'); ?>" width="175" height="43" alt="Flexicread
+						<img class="normal-logo" src="<?php echo base_url('assets/images/logo/logo-lg.png'); ?>" width="175" height="43" alt="Flexicread">
 						<img class="sticky-logo" src="<?php echo base_url('assets/images/logo/logo-lg.png'); ?>" width="175" height="43" alt="Flexicread">
 					</a>
 				</strong>
