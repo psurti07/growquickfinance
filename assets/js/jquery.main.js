@@ -488,7 +488,7 @@ function initSlickCarousel() {
 
 	jQuery('.trending-categories-slider').slick({
 		slidesToScroll: 1,
-		slidesToShow: 8,
+		slidesToShow: 6,
 		rows: 0,
 		arrows: false,
 		dots: false,

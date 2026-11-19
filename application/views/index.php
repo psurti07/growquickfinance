@@ -69,7 +69,7 @@ $this->load->view('includes/header');
 
 <main class="main">
     <section class="section section-theme-5 pt-0 pt-md-0 pb-xl-0 pb-0 bg-light-sky">
-        <div class="container-fluid">
+        <div class="container">
             <div class="trending-categories-slider">
                 <?php foreach ($banklist as $row) { ?>
                     <div class="wrap text-center">
