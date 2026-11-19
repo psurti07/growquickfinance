@@ -20,11 +20,11 @@
     } ?>
   </title>
   <meta name="description" content="<?php if (isset($meta->descriptions)) {
-    echo $meta->descriptions;
-  } ?>" />
+                                      echo $meta->descriptions;
+                                    } ?>" />
   <meta name="keywords" content="<?php if (isset($meta->keywords)) {
-    echo $meta->keywords;
-  } ?>" />
+                                    echo $meta->keywords;
+                                  } ?>" />
 
   <meta property="og:title" content="Flexicread: Your Trusted Source for Quick and Easy Financing">
   <meta property="og:site_name" content="Flexicread">
@@ -81,10 +81,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 m-auto">
-            	<div class="block-holder form-condidates bg-white shadow rounded-1 card-right">  
-              <!-- <div class="account-box"> -->
+              <div class="block-holder form-condidates bg-white shadow rounded-1 card-right">
+                <!-- <div class="account-box"> -->
                 <div class="text-center pb-30" style="margin:auto">
-                  <img src="<?php echo base_url('assets/images/logo/logo-lg.png'); ?>" alt="user" class="img-fluid" width="200px">
+                  <img src="<?php echo base_url('assets/images/logo/logo-lg.png'); ?>" alt="user" class="img-fluid" width="175px">
                 </div>
                 <div class="">
                   <div class="form-head text-center">
@@ -94,9 +94,8 @@
                   <div class="row mt-10">
                     <div class="col-12 mb-15 mb-md-20">
                       <div>
-    <input class="form-control" type="text" id="mobile" name="mobile" placeholder="Mobile No" id="mobile" required minlength="10" maxlength="10" inputmode="numeric" data-validation-regex-regex="^[6789]\d{9}$" data-validation-regex-message="Enter valid mobile number">
+                        <input class="form-control" type="text" id="mobile" name="mobile" placeholder="Mobile No" id="mobile" required minlength="10" maxlength="10" inputmode="numeric" data-validation-regex-regex="^[6789]\d{9}$" data-validation-regex-message="Enter valid mobile number">
                       </div>
-                  
                     </div>
                     <div class="col-12 mb-15 mb-md-20">
                       <input class="form-control" type="password" id="password" name="password" placeholder="Password">
@@ -116,7 +115,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -152,8 +150,8 @@
   <script src="<?php echo base_url('assets/js/plugins/toastr.min.js'); ?>" type="text/javascript"></script>
 
   <script type="text/javascript">
-    $(function () {
-      $('#submitForm1').on('submit', function (e) {
+    $(function() {
+      $('#submitForm1').on('submit', function(e) {
         e.preventDefault();
 
         $.ajax({
@@ -163,22 +161,21 @@
           dataType: "JSON",
           cache: false,
           processData: false,
-          beforeSend: function () {
+          beforeSend: function() {
             $('#form-submit1').html('VERIFYING... <span class="spinner-border spinner-border-sm ms-1" role="status" aria-hidden="true"></span>');
             $('#form-submit1').attr('disabled', true);
           },
-          success: function (response) {
+          success: function(response) {
             if (response['success'] == true) {
               toastr.success(response['message']);
               window.location.href = '<?php echo base_url("customer/dashboard"); ?>';
-            }
-            else {
+            } else {
               toastr.error(response['message']);
             }
             $('#form-submit1').html('LOGIN');
             $('#form-submit1').attr('disabled', false);
           },
-          error: function (jXHR, textStatus, errorThrown) {
+          error: function(jXHR, textStatus, errorThrown) {
             $('#form-submit1').html('LOGIN');
             $('#form-submit1').attr('disabled', false);
             toastr.error(errorThrown, 'ERROR');

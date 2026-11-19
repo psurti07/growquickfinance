@@ -488,7 +488,7 @@ function initSlickCarousel() {
 
 	jQuery('.trending-categories-slider').slick({
 		slidesToScroll: 1,
-		slidesToShow: 5,
+		slidesToShow: 8,
 		rows: 0,
 		arrows: false,
 		dots: false,
@@ -499,21 +499,21 @@ function initSlickCarousel() {
 			{
 				breakpoint: 1375,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 6,
 					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 1200,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 5,
 					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 					slidesToScroll: 1,
 				},
 			},

@@ -3,7 +3,7 @@ $this->load->view('includes/header');
 ?>
 
 <div
-    class="visual-block visual-theme-5 bg-dark hero-section text-black pt-60 pt-md-60 pt-xl-40 pb-40 pb-xl-40 pb-md-40">
+    class="visual-block visual-theme-5 bg-dark hero-section text-black pt-60 pt-md-60 pt-xl-80 pb-40 pb-xl-80 pb-md-40">
     <div class="container position-relative">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 col-xl-6 position-relative mb-md-0 mb-20">
@@ -68,8 +68,8 @@ $this->load->view('includes/header');
 </div>
 
 <main class="main">
-    <section class="section section-theme-5 pt-0 pt-md-0 pb-xl-0 pb-0 bg-black">
-        <div class="container">
+    <section class="section section-theme-5 pt-0 pt-md-0 pb-xl-0 pb-0 bg-light-sky">
+        <div class="container-fluid">
             <div class="trending-categories-slider">
                 <?php foreach ($banklist as $row) { ?>
                     <div class="wrap text-center">
@@ -185,7 +185,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-rupee-sign text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Enter amount & mobile</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Enter amount & mobile</h4>
                         <p class="text-dark">Choose how much you need and add your mobile number.</p>
                     </div>
                 </div>
@@ -197,7 +197,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-lock text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Verify with OTP</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Verify with OTP</h4>
                         <p class="text-dark">Confirm your number with a secure 4-digit code.</p>
                     </div>
                 </div>
@@ -209,7 +209,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-user text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Share your profile</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Share your profile</h4>
                         <p class="text-dark">Tell us about your work, income and credit score.</p>
                     </div>
                 </div>
@@ -221,7 +221,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-calendar-alt text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Choose your EMI</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Choose your EMI</h4>
                         <p class="text-dark">Pick a tenure from 12 to 72 months.</p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-lock text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Unlock your offer</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Unlock your offer</h4>
                         <p class="text-dark">See pre-approved offers from NBFC partners.</p>
                     </div>
                 </div>
@@ -245,7 +245,7 @@ $this->load->view('includes/header');
                                 <i class="fas fa-check text-white"></i>
                             </span>
                         </div>
-                        <h6 class="text-dark">Get funded</h6>
+                        <h4 class="text-black fs-6 fw-bold ">Get funded</h4>
                         <p class="text-dark">The NBFC verifies and disburses to your account.</p>
                     </div>
                 </div>
